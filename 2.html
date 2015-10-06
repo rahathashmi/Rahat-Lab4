@@ -1,0 +1,101 @@
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="mycss.css" />
+	<title> 2D image simulator </title>
+
+       <script type="text/javascript">
+
+            function leftArrowPressed() {
+                var element = document.getElementById("image1");
+                element.style.left = parseInt(element.style.left) - 5 + 'px';
+            }
+
+            function rightArrowPressed() {
+                var element = document.getElementById("image1");
+                element.style.left = parseInt(element.style.left) + 5 + 'px';
+            }
+
+            function upArrowPressed() {
+                var element = document.getElementById("image1");
+                element.style.top = parseInt(element.style.top) - 5 + 'px';
+            }
+
+            function downArrowPressed() {
+                var element = document.getElementById("image1");
+                element.style.top = parseInt(element.style.top) + 5 + 'px';
+            }
+
+            function moveSelection(event) {                    
+                switch (event.keyCode) {
+                    case 37:
+                        leftArrowPressed();
+                    break;
+
+                    case 39:
+                        rightArrowPressed();
+                    break;
+
+                    case 38:
+                        upArrowPressed();
+                    break;
+
+                    case 40:
+                        downArrowPressed();
+                    break;
+                }
+            };
+
+        function reCall()
+        {
+            // change position based on speed
+            moveSelection();
+			collide();
+            setTimeout("gameLoop()",10);
+        }
+		function collide() {
+		var element = document.getElementById("image1");
+		var vimage1=element.getElementById('image1').style.top;
+		var vimage1=element.getElementById('image1').style.left;
+		var vimg1=element.getElementById('img1').style.top;
+		var vimg1l=element.getElementById('img1').style.left;
+		var vimg2=element.getElementById('image2').style.top;
+		var vimg2l=element.getElementById('image2').style.left;
+		var vimg3=element.getElementById('image3').style.top;
+		var vimg3l=element.getElementById('image3').style.left;
+		vimage1=parseInt(vimage1);
+		vimg1=eparseInt(vimg1);
+		vimg2=parseInt(vimg2);
+		vimg3=parseInt(vimg3);
+		vimage1l=parseInt(vimage1);
+		vimg1l=eparseInt(vimg1);
+		vimg2l=parseInt(vimg2);
+		vimg3l=parseInt(vimg3);
+		
+		if (vimage1 == vimg1 | vimage1l == vimg1l)
+		{
+			element.style.top= element.getElementById('image1')= 0;
+		}
+		
+		
+		
+		
+		}
+		function randommove() {
+            		element.getElementById('img1').style.top = Math.floor((Math.random() * 700) + 1) + "px";
+			element.getElementById('img2').style.top = Math.floor((Math.random() * 700) + 1)+ "px";
+			element.getElementById('img3').style.top = Math.floor((Math.random() * 700) + 1)+ "px";
+        	}
+  </script>
+  </head>
+
+  <body onload="reCall();"onkeydown="moveSelection(event)" onkeyup="moveSelection(event)">
+
+   <div >
+   
+  <img  id="image1" src="aeroplane.png" style="position: absolute;  right: 15; left: 15; top: 15; bottom: auto; " height="150" width="150">
+  </div>
+  <div id=img1><img src="block.png"/></div>
+  <div id=img2><img src="block.png"/></div>
+  <div id=img3><img src="block.png"/></div>
+  </body>
+</html>
