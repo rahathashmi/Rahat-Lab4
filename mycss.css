@@ -11,6 +11,8 @@
 			#img1 {
 			position:absolute;
 			float:auto;
+			top:40px;
+			margin-left:1000px;
 			z-index:3;
 			-webkit-animation: moveclouds2 7s linear infinite;
 			-moz-animation: moveclouds2 7s linear infinite;
@@ -19,7 +21,8 @@
 
 		#img2 {
 			position:absolute;
-			top:300px;
+			top:450px;
+			margin-left:1000px;
 			z-index:3;
 			-webkit-animation: moveclouds2 13s linear infinite;
 			-moz-animation: moveclouds2 13s linear infinite;
@@ -29,10 +32,95 @@
 		#img3 {
 			position:absolute;
 			top:400px;
+			margin-left:1000px;
+			z-index:3;
+			-webkit-animation: moveclouds2 7s linear infinite;
+			-moz-animation: moveclouds2 7s linear infinite;
+			-o-animation: moveclouds2 7s linear infinite;
+		}
+		
+		#img4 {
+			position:absolute;
+			top:300px;
+			margin-left:1000px;
 			z-index:3;
 			-webkit-animation: moveclouds2 10s linear infinite;
 			-moz-animation: moveclouds2 10s linear infinite;
 			-o-animation: moveclouds2 10s linear infinite;
+		}
+		#img5 {
+			position:absolute;
+			top:220px;
+			z-index:3;
+			-webkit-animation: moveclouds2 11s linear infinite;
+			-moz-animation: moveclouds2 11s linear infinite;
+			-o-animation: moveclouds2 11s linear infinite;
+		}
+		#img6 {
+			position:absolute;
+			top:180px;
+			z-index:3;
+			-webkit-animation: moveclouds2 10s linear infinite;
+			-moz-animation: moveclouds2 10s linear infinite;
+			-o-animation: moveclouds2 10s linear infinite;
+		}
+		#img7 {
+			position:absolute;
+			top:140px;
+			z-index:3;
+			-webkit-animation: moveclouds2 12s linear infinite;
+			-moz-animation: moveclouds2 12s linear infinite;
+			-o-animation: moveclouds2 12s linear infinite;
+		}
+		#img8 {
+			position:absolute;
+			top:100px;
+			z-index:3;
+			-webkit-animation: moveclouds2 5s linear infinite;
+			-moz-animation: moveclouds2 5s linear infinite;
+			-o-animation: moveclouds2 5s linear infinite;
+		}
+		#img9 {
+			position:absolute;
+			top:60px;
+			margin-left:1500px;
+			z-index:3;
+			-webkit-animation: moveclouds2 15s linear infinite;
+			-moz-animation: moveclouds2 15s linear infinite;
+			-o-animation: moveclouds2 15s linear infinite;
+		}
+		#img10 {
+			position:absolute;
+			bottom:10px;
+			z-index:3;
+			-webkit-animation: moveclouds2 10s linear infinite;
+			-moz-animation: moveclouds2 10s linear infinite;
+			-o-animation: moveclouds2 10s linear infinite;
+		}
+		#img11 {
+			position:absolute;
+			bottom:40px;
+			margin-left:2000px;
+			z-index:3;
+			-webkit-animation: moveclouds2 10s linear infinite;
+			-moz-animation: moveclouds2 10s linear infinite;
+			-o-animation: moveclouds2 10s linear infinite;
+		}
+		#img12 {
+			position:absolute;
+			top:480px;
+			margin-left:2000px;
+			z-index:3;
+			-webkit-animation: moveclouds2 10s linear infinite;
+			-moz-animation: moveclouds2 10s linear infinite;
+			-o-animation: moveclouds2 10s linear infinite;
+		}
+		.Health p {
+			
+		text-align:center;
+	border: 2px solid #0066FF;  
+
+	background-color:#FFCC33;
 		}
 	@-webkit-keyframes moveclouds {
 		from {background-position: 100% 0}
